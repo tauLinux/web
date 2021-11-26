@@ -10,13 +10,26 @@ footer {
     color: #ffffff;
     align-items: flex-end;
 
+    @media screen and (max-width: 930px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     span {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        @media screen and (max-width: 930px) {
+            text-align: center;
+        }
+
         p {
             margin: 0;
+            @media screen and (max-width: 1040px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -80,13 +93,16 @@ footer {
     div > p:last-child {
         font-weight: normal;
         font-size: 10px;
+        @media screen and (max-width: 1140px) {
+            font-size: 8px;
+        }
     }
 }
 
 .footer-flex {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
 
     div {
         margin: 0;
@@ -95,6 +111,10 @@ footer {
     p {
         margin: 0;
         padding: 0;
+
+        @media screen and (max-width: 1140px) {
+            font-size: 10px;
+        }
 
         a {
             text-decoration: none;
