@@ -1,0 +1,20 @@
+.download-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 1.5rem;
+    width: fit-content;
+    max-width: 20rem;
+    // TODO: **REMOVE THIS, IT'S FOR TESTING ONLY**
+    word-break: break-all;
+    display: inline-flex;
+    flex-direction: column;
+
+    h3 {
+        margin: 0.3rem 0 0 0;
+    }
+
+    .align-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
