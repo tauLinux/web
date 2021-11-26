@@ -2,12 +2,14 @@ header {
     background-color: #ffffff;
     top: 0;
     padding: 0.5rem var(--padding);
+    height: 2.6rem;
     max-width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    z-index: 999;
 
     span {
         display: flex;
@@ -21,15 +23,19 @@ header {
         font-family: 'DM Sans';
     }
 
-    nav {
+    .nav-links {
         margin: 0;
         right: 0;
 
         display: flex;
         gap: 1.5rem;
+
+        @media screen and (max-width: 830px) {
+            display: none;
+        }
     }
 
-    nav > a {
+    .nav-links > a {
         text-decoration: none;
         align-items: center;
         display: flex;
@@ -39,7 +45,77 @@ header {
         gap: 0.4rem;
     }
 
-    nav > a:hover {
+    .nav-links > a:hover {
         text-decoration: underline;
     }
+
+    // MOBILE
+
+    .mobile-button {
+        button {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            cursor: pointer;
+        }
+
+        transition: 0.3s opacity;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        @media screen and (max-width: 830px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 830px) {
+            display: none;
+        }
+    }
+}
+
+.mobile-container {
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    background-color: #fff;
+    transition: 0.5s background-color, 0.5s transform;
+    width: 100%;
+    z-index: 99;
+    max-width: 100vw;
+
+    @media screen and (min-width: 830px) {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .nav-links > a {
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        color: #000;
+        font-size: 18px;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .nav-links > a:hover {
+        text-decoration: underline;
+    }
+}
+
+.mobile-visible {
+    transform: translateY(0%);
+}
+
+.mobile-invisible {
+    transform: translateY(-200%);
 }
