@@ -1,0 +1,32 @@
+.button {
+    outline: none;
+    background-color: transparent;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.button-primary {
+    border: 1px solid #8c56bf;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button-secondary {
+    border: 1px solid #cc2d3b;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button-tertiary {
+    color: #3d88f9;
+    text-decoration: none;
+}
