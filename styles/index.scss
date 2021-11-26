@@ -1,0 +1,13 @@
+// This file is for code relating to the Homepage
+
+.downloads-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.downloads-row-lower {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0 0 0;
+}

@@ -3,19 +3,14 @@ import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { Section } from '../components/Section'
+import '../styles/index.scss'
 
 const Page = () => {
     return (
         <Layout>
             <Hero />
             <Section bg={'F8F9FA'}>
-                <section
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                    }}
-                >
+                <section className={'downloads-row'}>
                     <Download
                         title={
                             <>
@@ -49,13 +44,7 @@ const Page = () => {
                         btnStyle={'secondary'}
                     />
                 </section>
-                <section
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'flex-end',
-                        margin: '2rem 0 0 0',
-                    }}
-                >
+                <section className={'downloads-row-lower'}>
                     <Button
                         style={'tertiary'}
                         icon={true}
