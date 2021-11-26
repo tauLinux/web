@@ -9,7 +9,13 @@ import '../styles/index.scss'
 const Page = () => {
     return (
         <Layout title={'Home'}>
-            <Hero />
+            <Hero
+                title={
+                    <p className={'text-tau'}>
+                        tau<p className={'text-linux'}>Linux</p>
+                    </p>
+                }
+            />
             <Section bg={'F8F9FA'}>
                 <section className={'downloads-row'}>
                     <Download
@@ -24,7 +30,7 @@ const Page = () => {
                         description={
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Remove the word-break here'
                         }
-                        link={'test'}
+                        link={'/about'}
                         btnStyle={'primary'}
                     />
                     <Download
@@ -40,7 +46,7 @@ const Page = () => {
                         description={
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Remove the word-break here'
                         }
-                        link={'test'}
+                        link={'/forward'}
                         btnStyle={'secondary'}
                     />
                 </section>
@@ -49,7 +55,7 @@ const Page = () => {
                         style={'tertiary'}
                         icon={true}
                         content={'View Other Editions'}
-                        href={'test'}
+                        href={'/download'}
                     />
                 </section>
             </Section>
