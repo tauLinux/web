@@ -1,28 +1,29 @@
 @font-face {
-    font-family: "DM Sans";
+    font-family: 'DM Sans';
     // Bold
-    src: url("/assets/fonts/DMSans-Bold.ttf");
+    src: url('/assets/fonts/DMSans-Bold.ttf');
     // Bold Italic
-    src: url("/assets/fonts/DMSans-BoldItalic.ttf");
+    src: url('/assets/fonts/DMSans-BoldItalic.ttf');
     // Italic
-    src: url("/assets/fonts/DMSans-Italic.ttf");
+    src: url('/assets/fonts/DMSans-Italic.ttf');
     // Medium
-    src: url("/assets/fonts/DMSans-Medium.ttf");
+    src: url('/assets/fonts/DMSans-Medium.ttf');
     // Medium Italic
-    src: url("/assets/fonts/DMSans-MediumItalic.ttf");
+    src: url('/assets/fonts/DMSans-MediumItalic.ttf');
     // Regular
-    src: url("/assets/fonts/DMSans-Regular.ttf");
+    src: url('/assets/fonts/DMSans-Regular.ttf');
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-  
+
 :root {
     --padding: 10vw;
 }

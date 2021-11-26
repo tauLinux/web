@@ -1,13 +1,13 @@
 .hero {
-    background-image: url("/assets/images/background.png");
+    background-image: url('/assets/images/background.png');
     background-repeat: no-repeat;
     background-position: top-left;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 3rem var(--padding);
-  
+
     h2 {
-        margin: .3rem 0 0 0;
-        font-family: "DM Sans";
+        margin: 0.3rem 0 0 0;
+        font-family: 'DM Sans';
 
         p {
             margin: 0;
@@ -15,7 +15,7 @@
             display: flex;
         }
     }
-  
+
     span {
         display: inline-block;
         width: 45vw;

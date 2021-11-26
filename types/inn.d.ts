@@ -1,3 +1,3 @@
-declare module "inn:routes" {
-  export default React.Component;
+declare module 'inn:routes' {
+    export default React.Component
 }

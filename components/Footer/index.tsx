@@ -1,5 +1,5 @@
-import { Twitter, GitHub } from 'react-feather' 
-import "./index.scss"
+import { Twitter, GitHub } from 'react-feather'
+import './index.scss'
 
 export const Footer = () => (
     <>
@@ -17,8 +17,12 @@ export const Footer = () => (
                         <a href="test">Privacy</a>
                     </td>
                 </table>
-                <a href="test"><GitHub size={24} /></a>
-                <a href="test"><Twitter size={24} /></a>
+                <a href="test">
+                    <GitHub size={24} />
+                </a>
+                <a href="test">
+                    <Twitter size={24} />
+                </a>
             </div>
         </footer>
     </>
