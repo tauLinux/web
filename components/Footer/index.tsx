@@ -18,7 +18,7 @@ export const Footer = () => (
                             <a href="test">Privacy</a>
                         </td>
                     </table>
-                    <a href="https://github.com/tausystems">
+                    <a href="https://github.com/tauLinux">
                         <GitHub size={24} />
                     </a>
                     <a href="https://twitter.com/tauLinux_">
