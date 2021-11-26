@@ -1,14 +1,24 @@
-const Home = () => {
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { Layout } from '../components/Layout';
+import { Section } from '../components/Section';
+import "../styles/index.scss"
+
+const Page = () => {
   return (
-    <>
-      <header>
-        <h1>Tau Linux</h1>
-        <nav>
-          <a href="test">Home</a>
-        </nav>
-      </header>
-    </>
+    <Layout>
+      <Hero />
+      <Section bg={"F8F9FA"}>
+        <p>This Section would contain the fucking downloads but I don't wanna write that atm</p>
+      </Section>
+      <Section bg={"E9ECEF"}>
+        <p>News Section</p>
+      </Section>
+      <Section bg={"F8F9FA"}>
+        <p>This Section would contain the fucking downloads but I don't wanna write that atm</p>
+      </Section>
+    </Layout>
   );
 };
 
-export default Home;
+export default Page;
