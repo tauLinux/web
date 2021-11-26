@@ -7,7 +7,7 @@ import '../styles/index.scss'
 
 const Page = () => {
     return (
-        <Layout>
+        <Layout title={'Home'}>
             <Hero />
             <Section bg={'F8F9FA'}>
                 <section className={'downloads-row'}>
@@ -57,10 +57,7 @@ const Page = () => {
                 <p>News Section</p>
             </Section>
             <Section bg={'F8F9FA'}>
-                <p>
-                    This Section would contain the fucking downloads but I don't
-                    wanna write that atm
-                </p>
+                <p>TODO: Use this section for something or remove it</p>
             </Section>
         </Layout>
     )
