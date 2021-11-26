@@ -5,16 +5,16 @@ import { Mobile } from './mobile'
 
 export const HeaderLinks = () => (
     <nav className={'nav-links'}>
-        <a href="test">
+        <a href="/">
             <Home size={18} /> Home
         </a>
-        <a href="test">
+        <a href="/download">
             <Download size={18} /> Download
         </a>
-        <a href="test">
+        <a href="/news">
             <FileText size={18} /> News
         </a>
-        <a href="test">
+        <a href="https://docs.tau.innatical.com">
             <HelpCircle size={18} /> Documentation
         </a>
     </nav>
