@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "DM Sans";
+    // Bold
+    src: url("/assets/fonts/DMSans-Bold.ttf");
+    // Bold Italic
+    src: url("/assets/fonts/DMSans-BoldItalic.ttf");
+    // Italic
+    src: url("/assets/fonts/DMSans-Italic.ttf");
+    // Medium
+    src: url("/assets/fonts/DMSans-Medium.ttf");
+    // Medium Italic
+    src: url("/assets/fonts/DMSans-MediumItalic.ttf");
+    // Regular
+    src: url("/assets/fonts/DMSans-Regular.ttf");
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+:root {
+    --padding: 10vw;
+}
+
+.text-tau {
+    font-weight: 100;
+}
+
+.text-linux {
+    font-weight: 900;
+}
+
+.container {
+    flex: 1 0 auto;
+    flex-grow: 1;
+}
