@@ -2,6 +2,7 @@ import { Button } from '../components/Button'
 import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
+import { NewsArticle } from '../components/NewsArticle'
 import { Section } from '../components/Section'
 import '../styles/index.scss'
 
@@ -17,8 +18,7 @@ const Page = () => {
                                 <span className={'text-tau'}>
                                     tau
                                     <span className={'text-linux'}>Linux</span>
-                                </span>{' '}
-                                Desktop
+                                </span>
                             </>
                         }
                         description={
@@ -34,7 +34,7 @@ const Page = () => {
                                     tau
                                     <span className={'text-linux'}>Linux</span>
                                 </span>{' '}
-                                OSTree
+                                Forward
                             </>
                         }
                         description={
@@ -54,7 +54,30 @@ const Page = () => {
                 </section>
             </Section>
             <Section bg={'E9ECEF'}>
-                <p>News Section</p>
+                <h3>News</h3>
+                <section className={'downloads-row'}>
+                    <NewsArticle
+                        link={'test'}
+                        image={'/assets/images/background.png'}
+                        title={'This is a news article title'}
+                        date={'25 November, 2021'}
+                        author={'Jamie Lee'}
+                    />
+                    <NewsArticle
+                        link={'test'}
+                        image={'/assets/images/background.png'}
+                        title={'This is a news article title'}
+                        date={'25 November, 2021'}
+                        author={'Jamie Lee'}
+                    />
+                    <NewsArticle
+                        link={'test'}
+                        image={'/assets/images/background.png'}
+                        title={'This is a news article title'}
+                        date={'25 November, 2021'}
+                        author={'Jamie Lee'}
+                    />
+                </section>
             </Section>
             <Section bg={'F8F9FA'}>
                 <p>TODO: Use this section for something or remove it</p>
