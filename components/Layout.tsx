@@ -12,12 +12,9 @@ export const Layout = ({
     children: React.ReactFragment
 }) => {
     title = `${title} • Tau Linux`
-    // Workaround to the Inn.ts title bug
-    //document.getElementsByTagName('title')[0].innerText = title
     return (
         <>
             <Head>
-                {/* Please fix that bug, Lea */}
                 <title>{title}</title>
                 {/* 
                 Need more graphics first :)
