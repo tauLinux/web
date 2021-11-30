@@ -12,12 +12,12 @@ export const Layout = ({
 }) => {
     title = `${title} • Tau Linux`
     // Workaround to the Inn.ts title bug
-    document.getElementsByTagName('title')[0].innerText = title
+    //document.getElementsByTagName('title')[0].innerText = title
     return (
         <>
             <Head>
                 {/* Please fix that bug, Lea */}
-                {/* <title>Tau</title> */}
+                <title>{title}</title>
                 {/* 
                 Need more graphics first :)
                 <link
@@ -47,7 +47,7 @@ export const Layout = ({
                 <meta name={'twitter:card'} content={'summary'} />
                 <meta name={'twitter:creator'} content={'@tauLinux_'} />
                 <meta name={'twitter:description'} content={''} />
-                <meta name={'twitter:title'} content={`${title} • Tau Linux`} />
+                <meta name={'twitter:title'} content={title} />
                 {/* 
                 Generate a CSP later
                 <meta httpEquiv="Content-Security-Policy" content={csp} /> */}
