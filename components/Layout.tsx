@@ -1,6 +1,7 @@
 import React from 'react'
 import { Footer } from './Footer'
 import { Header } from './Header'
+//@ts-ignore  TypeScript Bug
 import Head from '@innatical/inn.ts/head'
 
 export const Layout = ({
