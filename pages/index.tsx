@@ -28,7 +28,7 @@ const Page = () => {
                             </>
                         }
                         description={
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Remove the word-break here'
+                            'A First Class Platform for All You Do'
                         }
                         link={'/about'}
                         btnStyle={'primary'}
@@ -44,7 +44,7 @@ const Page = () => {
                             </>
                         }
                         description={
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Remove the word-break here'
+                            'Take a Trip to the Edge'
                         }
                         link={'/forward'}
                         btnStyle={'secondary'}
@@ -86,7 +86,8 @@ const Page = () => {
                 </section>
             </Section>
             <Section bg={'F8F9FA'}>
-                <p>TODO: Use this section for something or remove it</p>
+                <h5>Notices</h5>
+                <p>Kernel 5.17 in Forward Breaks on Intel Wireless Cards. Do Not Update.</p>
             </Section>
         </Layout>
     )
