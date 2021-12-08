@@ -27,9 +27,7 @@ const Page = () => {
                                 </span>
                             </>
                         }
-                        description={
-                            'A First Class Platform for All You Do'
-                        }
+                        description={'A First Class Platform for All You Do'}
                         link={'/about'}
                         btnStyle={'primary'}
                     />
@@ -43,9 +41,7 @@ const Page = () => {
                                 Forward
                             </>
                         }
-                        description={
-                            'Take a Trip to the Edge'
-                        }
+                        description={'Take a Trip to the Edge'}
                         link={'/forward'}
                         btnStyle={'secondary'}
                     />
@@ -61,7 +57,7 @@ const Page = () => {
             </Section>
             <Section bg={'E9ECEF'}>
                 <h3>News</h3>
-                <section className={'downloads-row'}>
+                <section className={'news-row'}>
                     <NewsArticle
                         link={'test'}
                         image={'/assets/images/background.png'}
@@ -87,7 +83,10 @@ const Page = () => {
             </Section>
             <Section bg={'F8F9FA'}>
                 <h5>Notices</h5>
-                <p>Kernel 5.17 in Forward Breaks on Intel Wireless Cards. Do Not Update.</p>
+                <p>
+                    Kernel 5.17 in Forward Breaks on Intel Wireless Cards. Do
+                    Not Update.
+                </p>
             </Section>
         </Layout>
     )
