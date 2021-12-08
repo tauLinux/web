@@ -13,10 +13,21 @@
 
     h3 {
         margin: 0.3rem 0 0 0;
+        font-weight: n;
     }
 
     .align-right {
         display: flex;
         justify-content: flex-end;
     }
+}
+
+.download-whitespace {
+    margin: 0.5rem;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
