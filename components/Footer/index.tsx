@@ -11,12 +11,16 @@ export const Footer = () => (
             <div className={'footer-flex'}>
                 <div>
                     <table>
-                        <td>
-                            <a href="test">Legal</a>
-                        </td>
-                        <td>
-                            <a href="test">Privacy</a>
-                        </td>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="test">Legal</a>
+                                </td>
+                                <td>
+                                    <a href="test">Privacy</a>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                     <a href="https://github.com/tauLinux">
                         <GitHub size={24} />

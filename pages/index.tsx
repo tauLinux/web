@@ -12,7 +12,7 @@ const Page = () => {
             <Hero
                 title={
                     <p className={'text-tau'}>
-                        tau<p className={'text-linux'}>Linux</p>
+                        tau<span className={'text-linux'}>Linux</span>
                     </p>
                 }
             />

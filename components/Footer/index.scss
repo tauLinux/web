@@ -55,24 +55,23 @@ footer {
         display: flex;
         flex-direction: row;
         border-collapse: collapse;
-
-        td {
-            border-left: 1px solid #918373;
-            padding: 0 0.7rem;
-        }
-
-        td:first-child,
-        th:first-child {
-            border-left: none;
-        }
+    }
+    td {
+        border-left: 1px solid #918373;
+        padding: 0 0.7rem;
     }
 
-    table > td > a {
+    td:first-child,
+    th:first-child {
+        border-left: none;
+    }
+
+    td > a {
         color: #918373;
         text-decoration: none;
     }
 
-    table > td > a:hover {
+    td > a:hover {
         text-decoration: underline;
     }
 
