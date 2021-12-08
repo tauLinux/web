@@ -1,4 +1,4 @@
-import { ReactChildren, ReactFragment } from 'react'
+import { ReactFragment } from 'react'
 import './index.scss'
 
 export const Section = ({

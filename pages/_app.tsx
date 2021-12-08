@@ -1,8 +1,8 @@
+import Routes from 'inn:routes'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import '../styles/globals.scss'
-import Routes from 'inn:routes'
 import { BrowserRouter } from 'react-router-dom'
+import '../styles/globals.scss'
 
 ReactDOM.render(
     <React.StrictMode>

@@ -1,4 +1,3 @@
-import { Button } from '../Button'
 import './index.scss'
 
 export const NewsArticle = ({

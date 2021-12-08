@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, Download, FileText, HelpCircle, Menu } from 'react-feather'
+import { Download, FileText, HelpCircle, Home, Menu } from 'react-feather'
 import './index.scss'
 import { Mobile } from './mobile'
 

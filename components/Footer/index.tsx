@@ -1,4 +1,4 @@
-import { Twitter, GitHub } from 'react-feather'
+import { GitHub, Twitter } from 'react-feather'
 import './index.scss'
 
 export const Footer = () => (
