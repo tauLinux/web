@@ -12,3 +12,8 @@
     background-color: #e9ecef;
     color: #000000;
 }
+
+.to-bottom {
+    // This section is the bottom section and should fill the page
+    flex-grow: 1;
+}
