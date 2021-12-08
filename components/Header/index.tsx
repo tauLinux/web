@@ -21,7 +21,7 @@ export const HeaderLinks = () => (
 )
 
 export const Header = () => {
-    const [isMenuOpen, setMenuOpen] = React.useState(true)
+    const [isMenuOpen, setMenuOpen] = React.useState(false)
     return (
         <>
             <header>
