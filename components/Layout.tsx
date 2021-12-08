@@ -16,8 +16,7 @@ export const Layout = ({
         <>
             <Head>
                 <title>{title}</title>
-                {/* 
-                Need more graphics first :)
+
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
@@ -34,7 +33,7 @@ export const Layout = ({
                     type="image/png"
                     sizes="16x16"
                     href="/favicon-16x16.png"
-                /> */}
+                />
                 <link rel="manifest" href="/site.webmanifest" />
 
                 <meta name={'description'} content={''} />
