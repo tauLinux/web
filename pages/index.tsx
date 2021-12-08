@@ -81,7 +81,7 @@ const Page = () => {
                     />
                 </section>
             </Section>
-            <Section bg={'F8F9FA'}>
+            <Section bg={'F8F9FA'} fill>
                 <h5>Notices</h5>
                 <p>
                     Kernel 5.17 in Forward Breaks on Intel Wireless Cards. Do
