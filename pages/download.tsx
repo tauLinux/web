@@ -57,44 +57,31 @@ const Page = () => {
                         version={'35'}
                         style={'primary'}
                         links={['', '']}
-                        archs={['x86_64', 'ARM64']}
+                        archs={['x86_64', 'aarch64']}
                     />
-                    <DnldBox
-                        version={'Forward 35'}
-                        style={'secondary'}
-                        links={['', '']}
-                        archs={['x86_64', 'ARM64']}
-                    />
-                </section>
-                <section className={'downloads-row downloads-row-lower'}>
                     <DnldBox
                         version={'OSTree 35'}
                         style={'primary'}
                         links={['', '']}
-                        archs={['x86_64', 'ARM64']}
+                        archs={['x86_64', 'aarch64']}
                     />
+                </section>
+                <section className={'downloads-row downloads-row-lower'}>
                     <DnldBox
-                        version={'OSTree Forward 35'}
+                        version={'34'}
                         style={'secondary'}
                         links={['', '']}
-                        archs={['x86_64', 'ARM64']}
+                        archs={['x86_64', 'aarch64']}
+                    />
+                    <DnldBox
+                        version={'OSTree 34'}
+                        style={'secondary'}
+                        links={['', '']}
+                        archs={['x86_64', 'aarch64']}
                     />
                 </section>
-                <section className={'downloads-row-content'}>
-                    <h3>What's Tau Forward?</h3>
-                    <p>
-                        Tau Forward is the name given to the current development
-                        versions of Tau Linux. It is primarily meant for
-                        advanced users, testers and package maintainers. Learn
-                        more at{' '}
-                        <a href="https://tau.innatical.com/forward">
-                            https://tau.innatical.com/forward
-                        </a>
-                        .
-                    </p>
-                </section>
             </Section>
-            <Section bg={'E9ECEF'} className={'lower-row'}>
+            <Section bg={'E9ECEF'} className={'lower-row'} fill>
                 <section>
                     <h2>ISO Verification</h2>
                     <p>
@@ -124,7 +111,7 @@ const Page = () => {
                     <Button
                         style={'tertiary'}
                         icon={true}
-                        href={''}
+                        href={'/alt-download'}
                         content={'Alternative Downloads'}
                         className={'download-button'}
                     />
