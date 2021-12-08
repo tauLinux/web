@@ -16,8 +16,6 @@
     },
     "devDependencies": {
         "@innatical/inn.ts": "^1.0.11",
-        "@mdx-js/mdx": "^2.0.0-next.9",
-        "@mdx-js/react": "^1.6.22",
         "@types/node": "^16.10.3",
         "@types/react": "^17.0.27",
         "@types/react-dom": "^17.0.0",
@@ -32,7 +30,6 @@
         "prettier": "^2.5.0",
         "sass": "^1.42.1",
         "typescript": "^4.3.2",
-        "vite": "^2.6.5",
-        "vite-plugin-mdx": "^3.5.6"
+        "vite": "^2.6.5"
     }
 }
