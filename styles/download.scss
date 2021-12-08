@@ -28,3 +28,18 @@
         max-width: 100%;
     }
 }
+
+.lower-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+
+    section > h2 {
+        font-weight: normal;
+    }
+}
+
+.download-button {
+    padding-left: 0;
+}

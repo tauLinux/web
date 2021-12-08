@@ -94,6 +94,42 @@ const Page = () => {
                     </p>
                 </section>
             </Section>
+            <Section bg={'E9ECEF'} className={'lower-row'}>
+                <section>
+                    <h2>ISO Verification</h2>
+                    <p>
+                        Once you have downloaded a{' '}
+                        <span className={'text-tau'}>
+                            tau
+                            <span className={'text-linux'}>Linux</span>
+                        </span>{' '}
+                        image, make sure to verify it for security and
+                        integrity.
+                    </p>
+                    <Button
+                        style={'tertiary'}
+                        icon={true}
+                        href={''}
+                        content={'Verify Your Download'}
+                        className={'download-button'}
+                    />
+                </section>
+                <section>
+                    <h2>Looking for something else?</h2>
+                    <p>
+                        If these aren’t what you need, other downloads including
+                        Respins, Torrents, and alternate architectures are
+                        available.
+                    </p>
+                    <Button
+                        style={'tertiary'}
+                        icon={true}
+                        href={''}
+                        content={'Alternative Downloads'}
+                        className={'download-button'}
+                    />
+                </section>
+            </Section>
         </Layout>
     )
 }
