@@ -5,7 +5,7 @@ import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { NewsArticle } from '../components/NewsArticle'
 import { Section } from '../components/Section'
-import { TauLinux } from '../components/TauLinux'
+import { TauOS } from '../components/tauOS'
 import '../styles/index.scss'
 
 const Page = () => {
@@ -13,19 +13,13 @@ const Page = () => {
 
     return (
         <Layout title={'Home'}>
-            <Hero
-                title={
-                    <p className={'text-tau'}>
-                        tau<span className={'text-linux'}>Linux</span>
-                    </p>
-                }
-            />
+            <Hero title={<TauOS />} />
             <Section bg={'F8F9FA'}>
                 <section className={'downloads-row'}>
                     <Download
                         title={
                             <>
-                                <TauLinux />
+                                <TauOS />
                             </>
                         }
                         description={t('home.default.description')}
@@ -35,7 +29,7 @@ const Page = () => {
                     <Download
                         title={
                             <>
-                                <TauLinux /> Forward
+                                <TauOS /> Forward
                             </>
                         }
                         description={t('home.forward.description')}

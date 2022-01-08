@@ -11,7 +11,7 @@ export const Layout = ({
     title: string
     children: React.ReactFragment
 }) => {
-    title = `${title} • Tau Linux`
+    title = `${title} • tauOS`
     return (
         <>
             <Head>
@@ -42,7 +42,7 @@ export const Layout = ({
                 <meta name={'og:type'} content={'website'} />
                 <meta name={'og:image'} content={'/assets/images/icon.png'} />
                 <meta name={'twitter:card'} content={'summary'} />
-                <meta name={'twitter:creator'} content={'@tauLinux_'} />
+                <meta name={'twitter:creator'} content={'@tauOS_'} />
                 <meta name={'twitter:description'} content={''} />
                 <meta name={'twitter:title'} content={title} />
                 {/* 

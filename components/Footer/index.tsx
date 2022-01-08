@@ -34,10 +34,10 @@ export const Footer = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="https://github.com/tauLinux">
+                        <a href="https://github.com/tau-OS">
                             <GitHub size={24} />
                         </a>
-                        <a href="https://twitter.com/tauLinux_">
+                        <a href="https://twitter.com/tauOS_">
                             <Twitter size={24} />
                         </a>
                     </div>

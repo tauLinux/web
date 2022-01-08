@@ -1,7 +1,7 @@
 import React from 'react'
 import { Download, FileText, HelpCircle, Home, Menu } from 'react-feather'
 import { useTranslation } from 'react-i18next'
-import { TauLinux } from '../TauLinux'
+import { TauOS } from '../tauOS'
 import './index.scss'
 import { Mobile } from './mobile'
 
@@ -33,7 +33,7 @@ export const Header = () => {
                 <span>
                     <img src="/assets/images/icon.png" width={24} height={24} />
                     <h1>
-                        <TauLinux />
+                        <TauOS />
                     </h1>
                 </span>
                 <HeaderLinks />

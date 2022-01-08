@@ -1,6 +1,6 @@
 {
-    "name": "tauLinux",
-    "short_name": "tauLinux",
+    "name": "tauOS",
+    "short_name": "tauOS",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

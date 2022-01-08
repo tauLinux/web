@@ -4,7 +4,7 @@ import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { Section } from '../components/Section'
-import { TauLinux } from '../components/TauLinux'
+import { TauOS } from '../components/tauOS'
 import '../styles/download.scss'
 
 const DnldBox = ({
@@ -28,7 +28,7 @@ const DnldBox = ({
         <Download
             title={
                 <>
-                    <TauLinux /> {version}
+                    <TauOS /> {version}
                 </>
             }
             description={description}
@@ -166,7 +166,7 @@ const Page = () => {
                             i18nKey={'download.iso_verification_content'}
                             t={t}
                         >
-                            1<TauLinux />
+                            1<TauOS />
                         </Trans>
                     </p>
                     <Button

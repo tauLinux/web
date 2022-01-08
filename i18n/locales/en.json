@@ -14,7 +14,7 @@
         "hero_title": "Download Tau",
         "download_link": "Download for {{arch}}",
         "iso_verification": "ISO Verification",
-        "iso_verification_content": "Once you have downloaded a <1>tau<2>Linux</2></1> image, make sure to verify it for security and integrity.",
+        "iso_verification_content": "Once you have downloaded a <1>tau<2>OS</2></1> image, make sure to verify it for security and integrity.",
         "verify_download": "Verify Your Download",
         "respins": "Looking for something else?",
         "respins_content": "If these aren’t what you need, other downloads including Respins, Torrents, and alternate architectures are available.",
@@ -24,7 +24,7 @@
         "title": "Alternative Downloads",
         "hero_title": "Alternative Downloads for Tau",
         "forward": "What's Tau Forward?",
-        "forward_content": "Tau Forward is the name given to the current development versions of Tau Linux. It is primarily meant for advanced users, testers and package maintainers. Learn more at",
+        "forward_content": "Tau Forward is the name given to the current development versions of tauOS. It is primarily meant for advanced users, testers and package maintainers. Learn more at",
         "spins": {
             "title": "Spins",
             "dragon_description": "Tau with the KDE Desktop",
