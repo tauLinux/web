@@ -1,8 +1,10 @@
+import { Trans, useTranslation } from 'react-i18next'
 import { Button } from '../components/Button'
 import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { Section } from '../components/Section'
+import { TauLinux } from '../components/TauLinux'
 import '../styles/download.scss'
 
 const DnldBox = ({
@@ -16,14 +18,12 @@ const DnldBox = ({
     links: Array<string>
     archs: Array<string>
 }) => {
+    const { t } = useTranslation()
     return (
         <Download
             title={
                 <>
-                    <span className={'text-tau'}>
-                        tau
-                        <span className={'text-linux'}>Linux</span>
-                    </span>{' '}
+                    <TauLinux />
                     {version}
                 </>
             }
@@ -35,9 +35,9 @@ const DnldBox = ({
                             style={style}
                             icon={true}
                             href={links[links.indexOf(button)]}
-                            content={`Download for ${
-                                archs[links.indexOf(button)]
-                            }`}
+                            content={t('download.download_link', {
+                                arch: archs[links.indexOf(button)],
+                            })}
                             key={button}
                         />
                     ))}
@@ -48,9 +48,11 @@ const DnldBox = ({
 }
 
 const Page = () => {
+    const { t } = useTranslation()
+
     return (
-        <Layout title={'Download'}>
-            <Hero title={'Download Tau'} />
+        <Layout title={t('download.title')}>
+            <Hero title={`${t('download.hero_title')}`} />
             <Section bg={'F8F9FA'}>
                 <section className={'downloads-row'}>
                     <DnldBox
@@ -83,36 +85,31 @@ const Page = () => {
             </Section>
             <Section bg={'E9ECEF'} className={'lower-row'} fill>
                 <section>
-                    <h2>ISO Verification</h2>
+                    <h2>{t('download.iso_verification')}</h2>
                     <p>
-                        Once you have downloaded a{' '}
-                        <span className={'text-tau'}>
-                            tau
-                            <span className={'text-linux'}>Linux</span>
-                        </span>{' '}
-                        image, make sure to verify it for security and
-                        integrity.
+                        <Trans
+                            i18nKey={'download.iso_verification_content'}
+                            t={t}
+                        >
+                            1<TauLinux />
+                        </Trans>
                     </p>
                     <Button
                         style={'tertiary'}
                         icon={true}
                         href={''}
-                        content={'Verify Your Download'}
+                        content={t('download.verify_download')}
                         className={'download-button'}
                     />
                 </section>
                 <section>
-                    <h2>Looking for something else?</h2>
-                    <p>
-                        If these aren’t what you need, other downloads including
-                        Respins, Torrents, and alternate architectures are
-                        available.
-                    </p>
+                    <h2>{t('download.respins')}</h2>
+                    <p>{t('download.respins_content')}</p>
                     <Button
                         style={'tertiary'}
                         icon={true}
                         href={'/alt-download'}
-                        content={'Alternative Downloads'}
+                        content={t('download.alternative_downloads')}
                         className={'download-button'}
                     />
                 </section>

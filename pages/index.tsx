@@ -1,12 +1,16 @@
+import { useTranslation } from 'react-i18next'
 import { Button } from '../components/Button'
 import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { NewsArticle } from '../components/NewsArticle'
 import { Section } from '../components/Section'
+import { TauLinux } from '../components/TauLinux'
 import '../styles/index.scss'
 
 const Page = () => {
+    const { t } = useTranslation()
+
     return (
         <Layout title={'Home'}>
             <Hero
@@ -21,27 +25,20 @@ const Page = () => {
                     <Download
                         title={
                             <>
-                                <span className={'text-tau'}>
-                                    tau
-                                    <span className={'text-linux'}>Linux</span>
-                                </span>
+                                <TauLinux />
                             </>
                         }
-                        description={'A First Class Platform for All You Do'}
+                        description={t('home.default.description')}
                         link={'/about'}
                         btnStyle={'primary'}
                     />
                     <Download
                         title={
                             <>
-                                <span className={'text-tau'}>
-                                    tau
-                                    <span className={'text-linux'}>Linux</span>
-                                </span>{' '}
-                                Forward
+                                <TauLinux /> Forward
                             </>
                         }
-                        description={'Take a Trip to the Edge'}
+                        description={t('home.forward.description')}
                         link={'/forward'}
                         btnStyle={'secondary'}
                     />
@@ -50,7 +47,7 @@ const Page = () => {
                     <Button
                         style={'tertiary'}
                         icon={true}
-                        content={'View Other Editions'}
+                        content={t('home.view_other_editions')}
                         href={'/download'}
                     />
                 </section>
@@ -82,7 +79,7 @@ const Page = () => {
                 </section>
             </Section>
             <Section bg={'F8F9FA'} fill>
-                <h5>Notices</h5>
+                <h5>{t('home.notices')}</h5>
                 <p>
                     Kernel 5.17 in Forward Breaks on Intel Wireless Cards. Do
                     Not Update.

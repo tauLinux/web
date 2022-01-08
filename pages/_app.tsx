@@ -2,6 +2,7 @@ import Routes from 'inn:routes'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
+import '../i18n/config'
 import '../styles/globals.scss'
 
 ReactDOM.render(
