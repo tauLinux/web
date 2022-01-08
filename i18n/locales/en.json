@@ -1,0 +1,53 @@
+{
+    "home": {
+        "default": {
+            "description": "A First Class Platform for All You Do"
+        },
+        "forward": {
+            "description": "Take a Trip to the Edge"
+        },
+        "view_other_editions": "View Other Editions",
+        "notices": "Notices"
+    },
+    "download": {
+        "title": "Download",
+        "hero_title": "Download Tau",
+        "download_link": "Download for {{arch}}",
+        "iso_verification": "ISO Verification",
+        "iso_verification_content": "Once you have downloaded a <1>tau<2>Linux</2></1> image, make sure to verify it for security and integrity.",
+        "verify_download": "Verify Your Download",
+        "respins": "Looking for something else?",
+        "respins_content": "If these aren’t what you need, other downloads including Respins, Torrents, and alternate architectures are available.",
+        "alternative_downloads": "Alternative Downloads"
+    },
+    "alt_download": {
+        "title": "Alternative Downloads",
+        "hero_title": "Alternative Downloads for Tau",
+        "forward": "What's Tau Forward?",
+        "forward_content": "Tau Forward is the name given to the current development versions of Tau Linux. It is primarily meant for advanced users, testers and package maintainers. Learn more at",
+        "spins": {
+            "title": "Spins",
+            "dragon_description": "Tau with the KDE Desktop",
+            "athens_description": "Tau with the Pantheon Desktop",
+            "more_downloads": "More Downloads"
+        }
+    },
+    "global": {
+        "header": {
+            "home": "Home",
+            "download": "Download",
+            "news": "News",
+            "documentation": "Documentation"
+        },
+        "footer": {
+            "copyright": "Copyright © {{year}} Innatical",
+            "copyright_lower": "Made with ❤️ in California, Minnesota, & Oregon",
+
+            "legal": "Legal",
+            "privacy": "Privacy",
+
+            "license": "Content is available under <1>Attribution-Share Alike 4.0 International</1>, unless otherwise noted."
+        },
+        "learn_more": "Learn More"
+    }
+}
