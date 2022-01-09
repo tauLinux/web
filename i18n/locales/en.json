@@ -1,7 +1,7 @@
 {
     "home": {
         "default": {
-            "description": "A First Class Platform for All You Do"
+            "description": "A RPM-OSTree Distro that needs a new tagline"
         },
         "forward": {
             "description": "Take a Trip to the Edge"
@@ -19,21 +19,21 @@
             "download_link": "Download for {{arch}}"
         },
         "iso_verification": "ISO Verification",
-        "iso_verification_content": "Once you have downloaded a tauOS image, make sure to verify it for security and integrity.",
+        "iso_verification_content": "Once you have downloaded tauOS, make sure to verify it for security and integrity.",
         "verify_download": "Verify Your Download",
         "respins": "Looking for something else?",
-        "respins_content": "If these aren’t what you need, other downloads including Respins, Torrents, and alternate architectures are available.",
+        "respins_content": "If these aren’t what you need, other downloads including Remixes, Old Versions, and alternate architectures are available on Sourceview.",
         "alternative_downloads": "Alternative Downloads"
     },
     "alt_download": {
         "title": "Alternative Downloads",
-        "hero_title": "Alternative Downloads for Tau",
-        "forward": "What's Tau Forward?",
-        "forward_content": "Tau Forward is the name given to the current development versions of tauOS. It is primarily meant for advanced users, testers and package maintainers. Learn more at",
+        "hero_title": "Alternative Downloads for tauOS",
+        "forward": "What is tauOS Devel?",
+        "forward_content": "tauOS Devel is the name given to the current development versions of tauOS. It is primarily meant for advanced users, testers and package maintainers. Learn more at",
         "spins": {
-            "title": "Spins",
-            "dragon_description": "Tau with the KDE Desktop",
-            "athens_description": "Tau with the Pantheon Desktop",
+            "title": "Remixes",
+            "dragon_description": "tauOS with the KDE Desktop",
+            "athens_description": "tauOS with the Pantheon Desktop",
             "more_downloads": "More Downloads"
         }
     },
@@ -43,6 +43,8 @@
             "download": "Download",
             "news": "News",
             "documentation": "Documentation"
+            "developers": "Developers",
+            "sourceview": "Sourceview"
         },
         "footer": {
             "copyright": "Copyright © {{year}} Innatical",

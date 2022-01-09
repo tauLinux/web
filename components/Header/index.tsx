@@ -22,6 +22,12 @@ export const HeaderLinks = () => {
             <a href="https://docs.tau.innatical.com">
                 <HelpCircle size={18} /> {t('global.header.documentation')}
             </a>
+            <a href="https://tau.innatical.com/developers">
+                <Wrench size={18} /> {t('global.header.developers')}
+            </a>
+            <a href="https://sourceview.innatical.com">
+                <Git size={18} /> {t('global.header.sourceview')}
+            </a>
         </nav>
     )
 }
