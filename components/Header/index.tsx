@@ -1,5 +1,13 @@
 import React from 'react'
-import { Download, FileText, HelpCircle, Home, Menu } from 'react-feather'
+import {
+    Download,
+    FileText,
+    GitBranch,
+    HelpCircle,
+    Home,
+    Menu,
+    Tool,
+} from 'react-feather'
 import { useTranslation } from 'react-i18next'
 import { TauOS } from '../tauOS'
 import './index.scss'
@@ -22,11 +30,11 @@ export const HeaderLinks = () => {
             <a href="https://docs.tau.innatical.com">
                 <HelpCircle size={18} /> {t('global.header.documentation')}
             </a>
-            <a href="https://tau.innatical.com/developers">
-                <Wrench size={18} /> {t('global.header.developers')}
+            <a href="/developers">
+                <Tool size={18} /> {t('global.header.developers')}
             </a>
             <a href="https://sourceview.innatical.com">
-                <Git size={18} /> {t('global.header.sourceview')}
+                <GitBranch size={18} /> {t('global.header.sourceview')}
             </a>
         </nav>
     )
