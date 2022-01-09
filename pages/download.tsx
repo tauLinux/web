@@ -4,7 +4,6 @@ import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 import { Section } from '../components/Section'
-import { TauOS } from '../components/tauOS'
 import '../styles/download.scss'
 
 const DnldBox = ({
@@ -62,7 +61,10 @@ const Page = () => {
                     <DnldBox
                         version={
                             <>
-                                <TauOS /> 1
+                                <span style={{ fontWeight: 'lighter' }}>
+                                    tau
+                                </span>
+                                OS 1
                             </>
                         }
                         description={t('download.btns.default_description')}
