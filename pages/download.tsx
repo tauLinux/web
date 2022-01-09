@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import { Button } from '../components/Button'
 import { Download } from '../components/Download'
 import { Hero } from '../components/Hero'
@@ -9,38 +9,42 @@ import '../styles/download.scss'
 
 const DnldBox = ({
     version,
+    description,
     style,
     links,
     archs,
+    changelog,
 }: {
-    version: string
+    version: string | JSX.Element
+    description: string
     style: 'primary' | 'secondary'
     links: Array<string>
     archs: Array<string>
+    changelog: JSX.Element
 }) => {
     const { t } = useTranslation()
     return (
         <Download
-            title={
-                <>
-                    <TauOS />
-                    {version}
-                </>
-            }
+            title={<>{version}</>}
+            description={description}
+            btnStyle={style}
             btnOnly={true}
             btnList={
                 <section className={'download-section'}>
-                    {links.map((button) => (
-                        <Button
-                            style={style}
-                            icon={true}
-                            href={links[links.indexOf(button)]}
-                            content={t('download.download_link', {
-                                arch: archs[links.indexOf(button)],
-                            })}
-                            key={button}
-                        />
-                    ))}
+                    <>
+                        {links.map((button) => (
+                            <Button
+                                style={style}
+                                icon={true}
+                                href={links[links.indexOf(button)]}
+                                content={t('download.btns.download_link', {
+                                    arch: archs[links.indexOf(button)],
+                                })}
+                                key={button}
+                            />
+                        ))}
+                        {changelog}
+                    </>
                 </section>
             }
         />
@@ -56,44 +60,45 @@ const Page = () => {
             <Section bg={'F8F9FA'}>
                 <section className={'downloads-row'}>
                     <DnldBox
-                        version={'35'}
+                        version={
+                            <>
+                                <TauOS /> 1
+                            </>
+                        }
+                        description={t('download.btns.default_description')}
                         style={'primary'}
-                        links={['', '']}
-                        archs={['x86_64', 'aarch64']}
+                        links={['']}
+                        archs={['x86_64']}
+                        changelog={
+                            <>
+                                <p>Changelog</p>
+                                <ul>
+                                    <li>Feature A</li>
+                                </ul>
+                            </>
+                        }
                     />
                     <DnldBox
-                        version={'OSTree 35'}
-                        style={'primary'}
-                        links={['', '']}
-                        archs={['x86_64', 'aarch64']}
-                    />
-                </section>
-                <section className={'downloads-row downloads-row-lower'}>
-                    <DnldBox
-                        version={'34'}
+                        version={t('download.btns.devkit_title')}
+                        description={t('download.btns.devkit_description')}
                         style={'secondary'}
-                        links={['', '']}
-                        archs={['x86_64', 'aarch64']}
-                    />
-                    <DnldBox
-                        version={'OSTree 34'}
-                        style={'secondary'}
-                        links={['', '']}
-                        archs={['x86_64', 'aarch64']}
+                        links={['']}
+                        archs={['x86_64']}
+                        changelog={
+                            <>
+                                <p>Changelog</p>
+                                <ul>
+                                    <li>Feature A</li>
+                                </ul>
+                            </>
+                        }
                     />
                 </section>
             </Section>
             <Section bg={'E9ECEF'} className={'lower-row'} fill>
                 <section>
                     <h2>{t('download.iso_verification')}</h2>
-                    <p>
-                        <Trans
-                            i18nKey={'download.iso_verification_content'}
-                            t={t}
-                        >
-                            1<TauOS />
-                        </Trans>
-                    </p>
+                    <p>{t('download.iso_verification_content')}</p>
                     <Button
                         style={'tertiary'}
                         icon={true}

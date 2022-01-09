@@ -18,7 +18,11 @@ export const Download = ({
     btnList?: JSX.Element
 }) => (
     <>
-        <section className={'download-box'}>
+        <section
+            className={`download-box ${
+                btnStyle === 'secondary' ? 'download-secondary' : ''
+            }`}
+        >
             <h3>{title}</h3>
             {/* whitespace haha 
                 TODO make this entire component better it's a goddamn mess

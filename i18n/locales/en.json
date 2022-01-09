@@ -12,9 +12,14 @@
     "download": {
         "title": "Download",
         "hero_title": "Download Tau",
-        "download_link": "Download for {{arch}}",
+        "btns": {
+            "devkit_title": "Tools for Developers",
+            "default_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula fringilla eros sed dapibus. Nam mauris sapien, laoreet vitae nibh in, porttitor faucibus felis. Etiam sapien enim, laoreet ut viverra rutrum, malesuada a nisi. Curabitur sagittis mattis dui, sit amet placerat dui.",
+            "devkit_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula fringilla eros sed dapibus.",
+            "download_link": "Download for {{arch}}"
+        },
         "iso_verification": "ISO Verification",
-        "iso_verification_content": "Once you have downloaded a <1>tau<2>OS</2></1> image, make sure to verify it for security and integrity.",
+        "iso_verification_content": "Once you have downloaded a tauOS image, make sure to verify it for security and integrity.",
         "verify_download": "Verify Your Download",
         "respins": "Looking for something else?",
         "respins_content": "If these aren’t what you need, other downloads including Respins, Torrents, and alternate architectures are available.",

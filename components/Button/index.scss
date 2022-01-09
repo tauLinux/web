@@ -3,7 +3,7 @@
     background-color: transparent;
     border-radius: 8px;
     font-family: 'Open Sans', sans-serif;
-    padding: 0.3rem;
+    padding: 0.5rem;
     display: inline-flex;
     align-items: center;
     gap: 0.2rem;
@@ -16,13 +16,13 @@
 }
 
 .button-primary {
-    border: 1px solid #8c56bf;
+    border: 2px solid #8c56bf;
     color: #000000;
     text-decoration: none;
 }
 
 .button-secondary {
-    border: 1px solid #cc2d3b;
+    border: 2px solid #cc2d3b;
     color: #000000;
     text-decoration: none;
 }

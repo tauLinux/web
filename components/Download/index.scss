@@ -2,8 +2,7 @@
     background-color: #ffffff;
     border: 1px solid #dee2e6;
     padding: 1.5rem;
-    width: fit-content;
-    width: 40rem;
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
 
@@ -14,12 +13,20 @@
     h3 {
         margin: 0.3rem 0 0 0;
         font-weight: n;
+        font-size: 2rem;
     }
 
     .align-right {
         display: flex;
         justify-content: flex-end;
     }
+
+    ul {
+        margin: 0;
+    }
+}
+.download-secondary {
+    width: 40rem;
 }
 
 .download-whitespace {
