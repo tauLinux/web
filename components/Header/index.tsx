@@ -30,12 +30,12 @@ export const Header = () => {
     return (
         <>
             <header>
-                <span>
+                <a href={'/'}>
                     <img src="/assets/images/icon.png" width={24} height={24} />
                     <h1>
                         <TauOS />
                     </h1>
-                </span>
+                </a>
                 <HeaderLinks />
                 <nav className={'mobile-button'}>
                     <button onClick={() => setMenuOpen(!isMenuOpen)}>

@@ -11,11 +11,12 @@ header {
     margin: 0;
     z-index: 999;
 
-    span {
+    a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        color: #000;
     }
 
     h1 {
