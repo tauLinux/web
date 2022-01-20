@@ -28,8 +28,7 @@ build-job:
   script:
     - yarn build
 
-lint-test-job:  
+deploy-job:  
   stage: deploy 
   script:
-    - 
 
