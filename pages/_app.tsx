@@ -1,15 +1,8 @@
-import Routes from 'inn:routes'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import '../i18n/config'
-import '../styles/globals.scss'
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
 
-ReactDOM.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Routes />
-        </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById('root')
-)
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp

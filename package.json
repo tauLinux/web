@@ -1,37 +1,27 @@
 {
-    "name": "tauos-website",
-    "version": "1.0.0",
-    "license": "CC-BY-SA-4.0",
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "serve": "vite preview"
-    },
-    "dependencies": {
-        "i18next": "^21.6.0",
-        "react": "^17.0.0",
-        "react-dom": "^17.0.0",
-        "react-feather": "^2.0.9",
-        "react-i18next": "^11.15.0",
-        "react-router": "^5.2.1",
-        "react-router-dom": "^5.3.0"
-    },
-    "devDependencies": {
-        "@innatical/inn.ts": "^1.0.11",
-        "@types/node": "^16.10.3",
-        "@types/react": "^17.0.27",
-        "@types/react-dom": "^17.0.0",
-        "@types/react-router-dom": "^5.3.1",
-        "@typescript-eslint/eslint-plugin": "^5.4.0",
-        "@typescript-eslint/parser": "^5.4.0",
-        "@vitejs/plugin-react": "^1.0.2",
-        "eslint": "^8.3.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-react": "^7.27.1",
-        "prettier": "^2.5.0",
-        "sass": "^1.42.1",
-        "typescript": "^4.3.2",
-        "vite": "^2.6.5"
-    }
+  "name": "tauos-website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.13",
+    "@types/react": "17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.9",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "typescript": "4.5.5"
+  }
 }
