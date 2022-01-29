@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     return (
         <Layout title={'Home'}>
             <Hero>
-                <Row>
+                <Row align="center">
                     <Col style={{ height: '100%' }}>
                         <Text h1 size="3rem" style={{ marginBottom: '1rem' }}>
                             Form,
@@ -28,11 +28,7 @@ const Home: NextPage = () => {
                             Learn More
                         </Button>
                     </Col>
-                    <img
-                        src="/assets/images/background.png"
-                        width="500em"
-                        height="300em"
-                    />
+                    <img src="/assets/images/hero.png" height="300rem" />
                 </Row>
             </Hero>
             <Grid.Container
