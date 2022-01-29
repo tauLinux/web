@@ -16,8 +16,11 @@ const Home: NextPage = () => {
                             size="3rem"
                             style={{ marginBottom: '1rem' }}
                         >
-                            A RPM-OSTree Distro <br /> that needs <br /> a new
-                            tagline
+                            Form,
+                            <br />
+                            Function,
+                            <br />
+                            Elegance
                         </Text>
                         <Text color="#FFFFFF" style={{ marginBottom: '2rem' }}>
                             THREE LINES OF BULLSHIT
@@ -44,7 +47,7 @@ const Home: NextPage = () => {
                     width: '100%',
                 }}
             >
-                <Grid xs={6}>
+                <Grid xs>
                     <DownloadCard title={'tauOS'} description={'wheeeeeee'} />
                 </Grid>
                 <Grid xs={3}>
@@ -53,31 +56,11 @@ const Home: NextPage = () => {
                         description={'wheeeeeee'}
                     />
                 </Grid>
-                <Grid>
+                <Grid xs={3}>
                     <DownloadCard
                         title={'tauOS Forward'}
                         description={'wheeeeeee'}
                     />
-                </Grid>
-            </Grid.Container>
-            <Grid.Container
-                gap={2}
-                style={{
-                    backgroundColor: '#1F2937',
-                    padding: '0 0 0 1rem',
-                    margin: 0,
-                    width: '100%',
-                }}
-            >
-                <Grid xs={2} alignItems="center">
-                    <Button rounded ghost>
-                        Security
-                    </Button>
-                </Grid>
-                <Grid alignItems="center">
-                    <Button rounded ghost>
-                        Documentation
-                    </Button>
                 </Grid>
             </Grid.Container>
         </Layout>
