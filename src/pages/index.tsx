@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 gap={2}
                 style={{
                     backgroundColor: '#1F2937',
-                    padding: 0,
+                    padding: '0 0 0 1rem',
                     margin: 0,
                     width: '100%',
                 }}
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 gap={2}
                 style={{
                     backgroundColor: '#1F2937',
-                    padding: 0,
+                    padding: '0 0 0 1rem',
                     margin: 0,
                     width: '100%',
                 }}
