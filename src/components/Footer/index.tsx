@@ -4,7 +4,7 @@ import { StyledFooter } from './style'
 export const Footer = () => {
     return (
         <StyledFooter>
-            <Container fluid>
+            <Container fluid style={{ padding: 0, margin: 0 }}>
                 <Text color="#ffffff">Copyright © 2021 Innatical</Text>
                 <Text color="#ffffff" weight={'bold'}>
                     Made with{' '}
