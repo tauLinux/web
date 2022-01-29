@@ -9,8 +9,10 @@ const GlobalStyle = globalCss({
         margin: 0,
         padding: 0,
         display: 'flex',
+        flexDirection: 'column',
         width: '100%',
         height: '100%',
+        backgroundColor: '#1F2937',
     },
     html: {
         margin: 0,
@@ -21,6 +23,11 @@ const GlobalStyle = globalCss({
     a: {
         color: 'inherit',
         textDecoration: 'none',
+    },
+    '#__next': {
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
     },
 })
 
