@@ -10,26 +10,23 @@ const Home: NextPage = () => {
             <Hero>
                 <Row>
                     <Col style={{ height: '100%' }}>
-                        <Text
-                            h1
-                            color="#FFFFFF"
-                            size="3rem"
-                            style={{ marginBottom: '1rem' }}
-                        >
+                        <Text h1 size="3rem" style={{ marginBottom: '1rem' }}>
                             Form,
                             <br />
                             Function,
                             <br />
                             Elegance
                         </Text>
-                        <Text color="#FFFFFF" style={{ marginBottom: '2rem' }}>
+                        <Text style={{ marginBottom: '2rem' }}>
                             THREE LINES OF BULLSHIT
                             <br />
                             THREE LINES OF BULLSHIT
                             <br />
                             THREE LINES OF BULLSHIT
                         </Text>
-                        <Button rounded>Learn More</Button>
+                        <Button rounded color="primary">
+                            Learn More
+                        </Button>
                     </Col>
                     <img
                         src="/assets/images/background.png"

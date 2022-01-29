@@ -1,9 +1,10 @@
 import { Container, Link, Row, Text } from '@nextui-org/react'
+import { TauTheme } from '../../theme/theme'
 import { StyledHeader } from './style'
 
 export const Header = () => {
     return (
-        <StyledHeader>
+        <StyledHeader className={TauTheme}>
             <Container style={{ padding: 0, margin: 0 }}>
                 <Row
                     justify="space-between"
@@ -22,7 +23,7 @@ export const Header = () => {
                             height="24px"
                         />
                         {/* TODO: tau should be regular, OS should be bold */}
-                        <Text color="#ffffff" h1>
+                        <Text h1>
                             tau<strong>OS</strong>
                         </Text>
                     </Row>

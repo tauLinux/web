@@ -1,6 +1,7 @@
 import { globalCss } from '@nextui-org/react'
 import Head from 'next/head'
 import * as React from 'react'
+import { TauTheme } from '../theme/theme'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
@@ -94,6 +95,7 @@ export const Layout = ({
                     flexDirection: 'column',
                     width: '100vw',
                 }}
+                className={TauTheme}
             >
                 {children}
             </div>

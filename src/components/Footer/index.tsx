@@ -1,12 +1,13 @@
 import { Container, Text } from '@nextui-org/react'
+import { TauTheme } from '../../theme/theme'
 import { StyledFooter } from './style'
 
 export const Footer = () => {
     return (
-        <StyledFooter>
+        <StyledFooter className={TauTheme}>
             <Container fluid style={{ padding: 0, margin: 0 }}>
-                <Text color="#ffffff">Copyright © 2021 Innatical</Text>
-                <Text color="#ffffff" weight={'bold'}>
+                <Text>Copyright © 2021 Innatical</Text>
+                <Text weight={'bold'}>
                     Made with{' '}
                     <span role="img" aria-label="heart">
                         ❤️

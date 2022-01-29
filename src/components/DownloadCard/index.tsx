@@ -9,12 +9,10 @@ export const DownloadCard = ({
 }) => {
     return (
         <Card style={{ backgroundColor: '#111827' }}>
-            <Text h4 color="white">
-                {title}
-            </Text>
-            <Text color="white">{description}</Text>
+            <Text h4>{title}</Text>
+            <Text>{description}</Text>
             <Card.Footer>
-                <Link color="primary">Download Now</Link>
+                <Link color="secondary">Download Now</Link>
             </Card.Footer>
         </Card>
     )
