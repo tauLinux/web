@@ -8,11 +8,15 @@ const GlobalStyle = globalCss({
     body: {
         margin: 0,
         padding: 0,
+        display: 'flex',
+        width: '100%',
+        height: '100%',
     },
     html: {
         margin: 0,
         padding: 0,
         fontFamily: 'Roboto, sans-serif',
+        height: '100%',
     },
     a: {
         color: 'inherit',
@@ -74,7 +78,18 @@ export const Layout = ({
                 />
             </Head>
             <Header />
-            {children}
+            {/* shoot me why does this not work */}
+            <div
+                style={{
+                    flex: '1 0 auto',
+                    flexGrow: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '100vw',
+                }}
+            >
+                {children}
+            </div>
             <Footer />
         </>
     )
