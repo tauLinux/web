@@ -12,21 +12,28 @@ export const Header = () => {
                     fluid
                     style={{ padding: 0, margin: 0 }}
                 >
-                    <Row
-                        justify="flex-start"
-                        align="center"
-                        style={{ padding: 0, margin: 0, gap: '.5rem' }}
-                    >
-                        <img
-                            src="/assets/images/icon.png"
-                            width="24px"
-                            height="24px"
-                        />
-                        {/* TODO: tau should be regular, OS should be bold */}
-                        <Text h1>
-                            tau<strong>OS</strong>
-                        </Text>
-                    </Row>
+                    <Link href="/">
+                        <Row
+                            justify="flex-start"
+                            align="center"
+                            style={{
+                                padding: 0,
+                                margin: 0,
+                                gap: '.5rem',
+                                cursor: 'pointer',
+                            }}
+                        >
+                            <img
+                                src="/assets/images/icon.png"
+                                width="24px"
+                                height="24px"
+                            />
+                            {/* TODO: tau should be regular, OS should be bold */}
+                            <Text h1>
+                                tau<strong>OS</strong>
+                            </Text>
+                        </Row>
+                    </Link>
 
                     <Row
                         justify="flex-end"
@@ -34,8 +41,7 @@ export const Header = () => {
                         fluid
                         style={{ padding: 0, margin: 0, gap: '1rem' }}
                     >
-                        {/* TODO change theme colour */}
-                        <Link href="#">Home</Link>
+                        <Link href="/">Home</Link>
                         <Link href="#">Download</Link>
                         <Link href="#">News</Link>
                         <Link href="#">Docs</Link>
