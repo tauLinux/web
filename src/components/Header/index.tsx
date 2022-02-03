@@ -42,7 +42,7 @@ export const Header = () => {
                         style={{ padding: 0, margin: 0, gap: '1rem' }}
                     >
                         <Link href="/">Home</Link>
-                        <Link href="#">Download</Link>
+                        <Link href="/download">Download</Link>
                         <Link href="#">News</Link>
                         <Link href="#">Docs</Link>
                         <Link href="#">Developers</Link>
