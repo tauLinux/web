@@ -4,7 +4,7 @@ import { DownloadCard } from '../components/DownloadCard'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
     return (
         <Layout title={'Home'}>
             <Hero>
@@ -60,4 +60,4 @@ const Home: NextPage = () => {
     )
 }
 
-export default Home
+export default Page
