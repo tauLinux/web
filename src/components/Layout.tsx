@@ -24,6 +24,7 @@ const GlobalStyle = globalCss({
     a: {
         color: 'inherit',
         textDecoration: 'none',
+        cursor: 'pointer',
     },
     '#__next': {
         display: 'flex',
