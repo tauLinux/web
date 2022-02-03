@@ -44,6 +44,7 @@ const DnldCard = ({
                         color={color}
                         bordered
                         style={{ marginBottom: '.5rem' }}
+                        key={links[links.indexOf(button)]}
                     >
                         <NextLink href={links[links.indexOf(button)]}>
                             <Link>
