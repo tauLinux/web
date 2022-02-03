@@ -50,7 +50,7 @@ export const Header = () => {
                         <NextLink href="/download">
                             <Link>Download</Link>
                         </NextLink>
-                        <NextLink href="#">
+                        <NextLink href="/news">
                             <Link>News</Link>
                         </NextLink>
                         <NextLink href="#">
