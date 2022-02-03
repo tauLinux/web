@@ -10,6 +10,7 @@ import {
     Text,
 } from '@nextui-org/react'
 import type { NextPage } from 'next'
+import NextLink from 'next/link'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/Layout'
 
@@ -44,9 +45,11 @@ const DnldCard = ({
                         bordered
                         style={{ marginBottom: '.5rem' }}
                     >
-                        <Link href={links[links.indexOf(button)]}>
-                            Download for {archs[links.indexOf(button)]}
-                        </Link>
+                        <NextLink href={links[links.indexOf(button)]}>
+                            <Link>
+                                Download for {archs[links.indexOf(button)]}
+                            </Link>
+                        </NextLink>
                     </Button>
                 ))}
                 <Text h5 style={{ marginTop: '1rem' }}>
@@ -139,7 +142,9 @@ const Page: NextPage = () => {
                                 bordered
                                 style={{ marginBottom: '.5rem' }}
                             >
-                                <Link href={'#'}>Verify Your Download</Link>
+                                <NextLink href={'#'}>
+                                    <Link>Verify Your Download</Link>
+                                </NextLink>
                             </Button>
                         </Card.Footer>
                     </Card>
@@ -164,7 +169,9 @@ const Page: NextPage = () => {
                                 bordered
                                 style={{ marginBottom: '.5rem' }}
                             >
-                                <Link href={'#'}>Alternative Downloads</Link>
+                                <NextLink href={'#'}>
+                                    <Link>Alternative Downloads</Link>
+                                </NextLink>
                             </Button>
                         </Card.Footer>
                     </Card>
