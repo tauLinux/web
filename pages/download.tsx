@@ -45,8 +45,8 @@ const Download = () => {
                 Desktop
               </Text>
               <Text>
-                A desktop setup for all, whether you&apos;re an experienced user or
-                just starting out, our desktop is the perfect place to get
+                A desktop setup for all, whether you&apos;re an experienced user
+                or just starting out, our desktop is the perfect place to get
                 started.
               </Text>
             </Card.Body>
