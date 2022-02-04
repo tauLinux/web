@@ -8,12 +8,16 @@ import {
   Spinner,
 } from "@nextui-org/react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Home = () => {
   const router = useRouter();
 
   return (
     <Container css={{ padding: 40, minHeight: "100vh" }} display="flex">
+      <Head>
+        <title>tauOS</title>
+      </Head>
       <Row align="center">
         <Col>
           <Text
@@ -69,7 +73,7 @@ const Home = () => {
           </Container>
         </Col>
         <Col>
-          <img src='/hero.png' />
+          <img src="/hero.png" />
         </Col>
       </Row>
     </Container>

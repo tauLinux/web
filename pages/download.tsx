@@ -7,6 +7,7 @@ import {
   Button,
   Spacer,
 } from "@nextui-org/react";
+import Head from "next/head";
 
 const Download = () => {
   return (
@@ -20,6 +21,9 @@ const Download = () => {
       }}
       display="flex"
     >
+      <Head>
+        <title>Download tauOS</title>
+      </Head>
       <Row>
         <Col>
           <Text h1 css={{ textAlign: "center" }}>
