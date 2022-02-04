@@ -56,7 +56,7 @@ export const Header = () => {
                         <NextLink href="#">
                             <Link>Docs</Link>
                         </NextLink>
-                        <NextLink href="#">
+                        <NextLink href="/developers">
                             <Link>Developers</Link>
                         </NextLink>
                         <div
