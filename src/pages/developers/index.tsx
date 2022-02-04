@@ -1,18 +1,26 @@
-import { Card, Container, Grid, Text } from '@nextui-org/react'
+import { Card, Container, Grid, Row, Text } from '@nextui-org/react'
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import { Hero } from '../../components/Hero'
 import { Layout } from '../../components/Layout'
 
 const Page: NextPage = () => {
     return (
-        <Layout title={'Home'}>
+        <Layout title={'Developers'}>
+            <Hero>
+                <Row align="center" justify="center">
+                    <Text h1 size="3rem">
+                        tauOS Developer Centre
+                    </Text>
+                </Row>
+            </Hero>
             <Grid.Container
                 gap={1}
                 style={{
                     backgroundColor: '#1F2937',
                     padding: '0 0 0 1rem',
                     margin: 0,
-                    width: '100%',
+                    width: '99%',
                 }}
             >
                 <Grid xs>
@@ -72,7 +80,9 @@ const Page: NextPage = () => {
                             </Card.Header>
 
                             <Card.Image
-                                src={'/assets/images/background.png'}
+                                src={
+                                    '/assets/images/developers/ally-griffin.jpg'
+                                }
                                 width="100%"
                                 height={340}
                             />
@@ -86,7 +96,7 @@ const Page: NextPage = () => {
                     backgroundColor: '#1F2937',
                     padding: '0 0 0 1rem',
                     margin: 0,
-                    width: '100%',
+                    width: '99%',
                 }}
             >
                 <Grid xs>
@@ -114,7 +124,9 @@ const Page: NextPage = () => {
                             </Card.Header>
 
                             <Card.Image
-                                src={'/assets/images/background.png'}
+                                src={
+                                    '/assets/images/developers/bradley-allweil.jpg'
+                                }
                                 width="100%"
                                 height={340}
                             />
@@ -146,7 +158,9 @@ const Page: NextPage = () => {
                             </Card.Header>
 
                             <Card.Image
-                                src={'/assets/images/background.png'}
+                                src={
+                                    '/assets/images/developers/fakurian-design.jpg'
+                                }
                                 width="100%"
                                 height={340}
                             />
