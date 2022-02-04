@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <StyledFooter className={TauTheme}>
             <Container fluid style={{ padding: 0, margin: 0 }}>
-                <Text>Copyright © 2021 Innatical</Text>
+                <Text>Copyright © {new Date().getFullYear()} Innatical</Text>
                 <Text weight={'bold'}>
                     Made with{' '}
                     <span role="img" aria-label="heart">
