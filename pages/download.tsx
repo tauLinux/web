@@ -38,7 +38,7 @@ const Download = () => {
         </Col>
       </Row>
       <Row css={{ gap: 20 }} justify="center">
-        <Col css={{width: "25rem"}}>
+        <Col css={{ width: "25rem" }}>
           <Card hoverable>
             <Card.Body>
               <Text size={30} weight="bold">
@@ -60,8 +60,8 @@ const Download = () => {
             </Card.Footer>
           </Card>
         </Col>
-        <Col css={{width: "25rem"}}>
-          <Card hoverable css={{width: "25rem"}}>
+        <Col css={{ width: "25rem" }}>
+          <Card hoverable css={{ width: "25rem" }}>
             <Card.Body>
               <Text size={30} weight="bold">
                 Server
@@ -83,7 +83,7 @@ const Download = () => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col css={{width: "25rem"}}>
+        <Col css={{ width: "25rem" }}>
           <Card hoverable>
             <Card.Body>
               <Text size={30} weight="bold">
@@ -102,7 +102,6 @@ const Download = () => {
             </Card.Footer>
           </Card>
         </Col>
-
       </Row>
     </Container>
   );
