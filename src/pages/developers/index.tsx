@@ -7,7 +7,7 @@ const Page: NextPage = () => {
     return (
         <Layout title={'Home'}>
             <Grid.Container
-                gap={2}
+                gap={1}
                 style={{
                     backgroundColor: '#1F2937',
                     padding: '0 0 0 1rem',
@@ -81,7 +81,7 @@ const Page: NextPage = () => {
                 </Grid>
             </Grid.Container>
             <Grid.Container
-                gap={2}
+                gap={1}
                 style={{
                     backgroundColor: '#1F2937',
                     padding: '0 0 0 1rem',
