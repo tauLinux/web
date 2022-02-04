@@ -94,7 +94,7 @@ export const Layout = ({
                     flexGrow: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    width: '100vw',
+                    width: '100%',
                 }}
                 className={TauTheme}
             >
