@@ -7,6 +7,7 @@ import {
     Link,
     NormalColors,
     Row,
+    Spacer,
     Text,
 } from '@nextui-org/react'
 import type { NextPage } from 'next'
@@ -99,7 +100,7 @@ const Page: NextPage = () => {
                 </Grid>
                 <Grid xs>
                     <DnldCard
-                        version={'Tools for Developers'}
+                        version={'Enterprise'}
                         description={
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula fringilla eros sed dapibus.'
                         }
@@ -165,15 +166,27 @@ const Page: NextPage = () => {
                         </Card.Body>
 
                         <Card.Footer>
-                            <Button
-                                color="secondary"
-                                bordered
-                                style={{ marginBottom: '.5rem' }}
-                            >
-                                <NextLink href={'#'}>
-                                    <Link>Alternative Downloads</Link>
-                                </NextLink>
-                            </Button>
+                            <Row>
+                                <Button
+                                    color="secondary"
+                                    bordered
+                                    style={{ marginBottom: '.5rem' }}
+                                >
+                                    <NextLink href={'#'}>
+                                        <Link>Alternative Downloads</Link>
+                                    </NextLink>
+                                </Button>
+                                <Spacer x={1} />
+                                <Button
+                                    color="secondary"
+                                    bordered
+                                    style={{ marginBottom: '.5rem' }}
+                                >
+                                    <NextLink href={'#'}>
+                                        <Link>Developer Downloads</Link>
+                                    </NextLink>
+                                </Button>
+                            </Row>
                         </Card.Footer>
                     </Card>
                 </Grid>
