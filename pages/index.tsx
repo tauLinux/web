@@ -8,8 +8,6 @@ import {
   Spinner,
 } from "@nextui-org/react";
 import { useRouter } from "next/router";
-import Image from "next/image";
-import hero from "../public/hero.png";
 
 const Home = () => {
   const router = useRouter();
@@ -71,7 +69,7 @@ const Home = () => {
           </Container>
         </Col>
         <Col>
-          <Image src={hero} />
+          <img src='/hero.png' />
         </Col>
       </Row>
     </Container>
