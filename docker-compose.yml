@@ -8,6 +8,8 @@ services:
       - 6969:3000
     depends_on:
       - db
+    environment:
+      - DATABASE_URL
   db:
     image: postgres
     restart: always
