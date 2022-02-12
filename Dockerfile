@@ -11,6 +11,7 @@ COPY . .
 
 # build
 RUN yarn build
+RUN yarn prisma generate
 
 # remove dev dependencies
 RUN npm prune --production
