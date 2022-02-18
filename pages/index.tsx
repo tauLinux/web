@@ -12,6 +12,8 @@ import Head from "next/head";
 import { useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -110,6 +112,14 @@ const Home = () => {
               <Button rounded color="primary" onClick={() => setOpen(true)}>
                 Subscribe for Updates
               </Button>
+              <Button.Group css={{ m: 0 }} rounded flat color="secondary">
+                <Link href="https://twitter.com/tauOS_" passHref>
+                  <Button icon={<FontAwesomeIcon icon={faTwitter} />} as="a" />
+                </Link>
+                <Link href="https://discord.gg/G23RYxaY6J" passHref>
+                  <Button icon={<FontAwesomeIcon icon={faDiscord} />} as="a" />
+                </Link>
+              </Button.Group>
             </Container>
           </Col>
           <Col>
