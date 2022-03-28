@@ -116,7 +116,7 @@ const Home = () => {
                 <Link href="https://twitter.com/tauOS_" passHref>
                   <Button icon={<FontAwesomeIcon icon={faTwitter} />} as="a" />
                 </Link>
-                <Link href="https://discord.gg/G23RYxaY6J" passHref>
+                <Link href="https://discord.gg/5fdPuxTg5Q" passHref>
                   <Button icon={<FontAwesomeIcon icon={faDiscord} />} as="a" />
                 </Link>
               </Button.Group>
