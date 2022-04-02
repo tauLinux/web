@@ -1,0 +1,16 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@tauos.co
+Contact: mailto:contact@fyralabs.com
+Expires: 2023-01-01T07:59:00.000Z
+Preferred-Languages: en
+Canonical: https://tauos.co/.well-known/security.txt
+Policy: https://github.com/tau-OS/meta/security/policy
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRHrE2Cxtd8xVtN8kpdFVr293yMmwUCYkjenQAKCRBdFVr293yM
+myU3AP0YwiHf/OfdhvW3uIY0PH4A3BlzszenWDk2ldNw+Eb2dgD/Uz/zQ1xYrHTw
+VM2G03tekx6kGvRP8Z6UAhYmHkPhagU=
+=tQ4R
+-----END PGP SIGNATURE-----
