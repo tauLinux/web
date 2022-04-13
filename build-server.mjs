@@ -19,21 +19,9 @@ async function build() {
     ? process.env.VERSION
     : new Date().toISOString();
 
-  if (!process.env.DATABASE_URL) {
-    throw new Error("DATABASE_URL is required");
-  }
-
-  if (!process.env.CLOUDFLARE_ACCOUNT_ID) {
-    throw new Error("CLOUDFLARE_ACCOUNT_ID is required");
-  }
-
-  if (!process.env.CLOUDFLARE_IMAGES_TOKEN) {
-    throw new Error("CLOUDFLARE_IMAGES_TOKEN is required");
-  }
-
   console.log(`Building Worker in ${mode} mode for version ${version}`);
 
-  const outfile = "./public/_worker.js";
+  const outfile = "./functions/_worker.js";
   const startTime = Date.now();
   const result = await esbuild.build({
     entryPoints: ["./worker/index.ts"],
@@ -43,21 +31,11 @@ async function build() {
     incremental: mode !== "production",
     format: "esm",
     metafile: true,
-    external:
-      mode === "production"
-        ? ["*.development.js"]
-        : ["*.production.js", "*.production.min.js"],
-    define: {
-      process: JSON.stringify({
-        env: {
-          NODE_ENV: mode,
-          VERSION: version,
-          DATABASE_URL: process.env.DATABASE_URL,
-          CLOUDFLARE_IMAGES_TOKEN: process.env.CLOUDFLARE_IMAGES_TOKEN,
-          CLOUDFLARE_ACCOUNT_ID: process.env.CLOUDFLARE_ACCOUNT_ID,
-        },
-      }),
-    },
+    // define: {
+    //   process: JSON.stringify({
+    //     env: {},
+    //   }),
+    // },
     outfile,
     plugins: [
       NodeModulesPolyfillPlugin(),
