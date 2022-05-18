@@ -1,81 +1,130 @@
-import { Col, Container, Row, Text, Button, Spacer } from "@nextui-org/react";
+import {
+  Col,
+  Container,
+  Row,
+  Text,
+  Button,
+  Spacer,
+  Input,
+  styled,
+  Link,
+  Card,
+} from "@nextui-org/react";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
+import {
+  faDiscord,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
+const ButtonBar = styled("div", {
+  display: "flex",
+  gap: 10,
+  justifyContent: "center",
+});
+
+const NavLinks = styled("div", {
+  display: "flex",
+  gap: 20,
+});
+
+const SocialLinks = styled("div", {
+  display: "flex",
+  gap: 10,
+  fontSize: "1.25rem",
+});
 
 const Home = () => {
   return (
-    <Container css={{ padding: 40, minHeight: "100vh" }} display="flex">
+    <Container
+      css={{
+        minHeight: "100vh",
+        flexDirection: "column",
+      }}
+      display="flex"
+    >
       <Head>
         <title>tauOS</title>
       </Head>
-      <Row align="center">
-        <Col>
-          <Text
-            weight="bold"
-            h1
-            css={{
-              textGradient: "45deg, $blue500 -20%, $pink500 50%",
-              lineHeight: "$sm",
-            }}
-            size={80}
-          >
-            Form.
+
+      <Spacer y={3} />
+
+      <Row
+        css={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <Text weight="bold" size="1.5rem">
+          tauOS
+        </Text>
+
+        <NavLinks>
+          <Link href="#" color="text">
+            News
+          </Link>
+          <Link href="#" color="text">
+            Downloads
+          </Link>
+          <Link href="#" color="text">
+            Developers
+          </Link>
+        </NavLinks>
+
+        <SocialLinks>
+          <FontAwesomeIcon icon={faDiscord} />
+          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faGithub} />
+        </SocialLinks>
+      </Row>
+
+      <Spacer y={3} />
+
+      <Row css={{ textAlign: "center" }}>
+        <Col
+          css={{
+            display: "flex",
+            flexDirection: "column",
+            maxW: 750,
+            mx: "auto",
+            justifyContent: "center",
+          }}
+        >
+          <Text h1 css={{ lineHeight: "$xs" }} weight="black" size="3.75rem">
+            The operating system that helps you create faster.
           </Text>
-          <Text
-            weight="bold"
-            h1
-            css={{
-              textGradient: "45deg, $purple500 -20%, $pink500 100%",
-              lineHeight: "$sm",
-            }}
-            size={80}
-          >
-            Function.
+          <Spacer y={1.1} />
+          <Text css={{ maxW: 550 }}>
+            tauOS is the operating system built to help you make your best work.
+            Seemless sync, elegant design, and a workflow that just gets out of
+            your way, all out of the box.
           </Text>
-          <Text
-            weight="bold"
-            h1
-            css={{
-              textGradient: "45deg, $red500 -20%, $blue500 100%",
-              lineHeight: "$sm",
-            }}
-            size={80}
-          >
-            Elegance.
-          </Text>
-          <Spacer />
-          <Text style={{ marginBottom: "2rem", width: 500 }}>
-            Introducting tauOS, the modern operating system for creators,
-            developers, gamers, and everyone else. Upgrade your experience with
-            the next generation of systems. Coming soon!
-          </Text>
-          <Container gap={0} display="flex" css={{ gap: 10 }}>
-            <Button
-              rounded
-              color="primary"
-              as="a"
-              //@ts-ignore
-              href="https://cdn.forms-content.sg-form.com/a03c8cea-beb2-11ec-9291-6a630c659945
-              "
-            >
-              Subscribe for Updates
+          <Spacer y={1} />
+          <ButtonBar>
+            <Button>Stay Updated</Button>
+            <Button flat color="secondary">
+              Test the Alpha
             </Button>
-            <Button.Group css={{ m: 0 }} rounded flat color="secondary">
-              <Link href="https://twitter.com/tauOS_" passHref>
-                <Button icon={<FontAwesomeIcon icon={faTwitter} />} as="a" />
-              </Link>
-              <Link href="https://discord.gg/5fdPuxTg5Q" passHref>
-                <Button icon={<FontAwesomeIcon icon={faDiscord} />} as="a" />
-              </Link>
-            </Button.Group>
-          </Container>
-        </Col>
-        <Col>
-          <img src="/hero.png" />
+          </ButtonBar>
         </Col>
       </Row>
+
+      {/* <Spacer y={3} /> */}
+
+      {/* <Row>
+        <div>
+          <Text size="3rem" weight="bold">
+            All of your things, at once, in one place
+          </Text>
+          <Text>
+            Imagine all of your files, settings, apps, passwords, accounts, all
+            synced on all of your devices. Now stop imagining, we have it.
+          </Text>
+        </div>
+      </Row> */}
     </Container>
   );
 };
