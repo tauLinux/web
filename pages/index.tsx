@@ -9,6 +9,8 @@ import {
   styled,
   Link,
   Card,
+  Grid,
+  Image,
 } from "@nextui-org/react";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -112,18 +114,92 @@ const Home = () => {
         </Col>
       </Row>
 
-      {/* <Spacer y={3} /> */}
+      <Spacer y={3} />
+      {/* 
+      <Row
+        css={{
+          textAlign: "center",
+        }}
+      >
+        <Col>
+          <div>
+            <Text size="3rem" weight="bold">
+              All of your things, at once, in one place
+            </Text>
+            <Text>
+              Imagine all of your files, settings, apps, passwords, accounts,
+              all synced on all of your devices. Now stop imagining, we have it.
+            </Text>
+          </div>
+        </Col>
+      </Row> */}
 
-      {/* <Row>
-        <div>
-          <Text size="3rem" weight="bold">
-            All of your things, at once, in one place
-          </Text>
-          <Text>
-            Imagine all of your files, settings, apps, passwords, accounts, all
-            synced on all of your devices. Now stop imagining, we have it.
-          </Text>
-        </div>
+      <Row
+        css={{
+          textAlign: "center",
+        }}
+      >
+        <Col>
+          <div>
+            <Text size="3rem" weight="bold">
+              Modern and elegant design, for a modern workflow
+            </Text>
+            <Text>
+              Imagine all of your files, settings, apps, passwords, accounts,
+              all synced on all of your devices. Now stop imagining, we have it.
+            </Text>
+          </div>
+        </Col>
+      </Row>
+
+      {/* <Image
+          src="/designs/Lumiere.png"
+          containerCss={{
+            flex: 1,
+          }}
+        />
+        <Image src="/designs/Victrola.png" /> */}
+      {/* <Grid.Container justify="center" gap={3}>
+        <Grid>
+          <Card cover>
+            <Card.Image src="/designs/Lumiere.png" />
+          </Card>
+        </Grid>
+        <Grid>
+          <Card cover css={{ h: "100%" }}>
+            <Card.Image src="/designs/Victrola.png" width="100%" />
+          </Card>
+        </Grid>
+      </Grid.Container> */}
+      {/* <Grid.Container justify="center" gap={3}>
+        <Grid>
+          <Card cover>
+            <Card.Image width="100%" src="/designs/Notejot.png" />
+          </Card>
+        </Grid>
+
+        <Grid>
+          <Card cover>
+            <Card.Image width="100%" src="/designs/Vasari.png" />
+          </Card>
+        </Grid>
+      </Grid.Container> */}
+      {/* <Row
+        css={{
+          textAlign: "center",
+        }}
+      >
+        <Col>
+          <div>
+            <Text size="3rem" weight="bold">
+              Ready for developers, amnd more ready
+            </Text>
+            <Text>
+              Imagine all of your files, settings, apps, passwords, accounts,
+              all synced on all of your devices. Now stop imagining, we have it.
+            </Text>
+          </div>
+        </Col>
       </Row> */}
     </Container>
   );
