@@ -101,7 +101,7 @@ const Home = () => {
           <Spacer y={1.1} />
           <Text css={{ maxW: 550 }}>
             tauOS is the operating system built to help you make your best work.
-            Seemless sync, elegant design, and a workflow that just gets out of
+            Seamless sync, elegant design, and a workflow that just gets out of
             your way, all out of the box.
           </Text>
           <Spacer y={1} />
