@@ -96,7 +96,7 @@ const Home = () => {
           }}
         >
           <Text h1 css={{ lineHeight: "$xs" }} weight="black" size="3.75rem">
-            Create faster.
+            The operating system that helps you create
           </Text>
           <Spacer y={1.1} />
           <Text css={{ maxW: 550 }}>
