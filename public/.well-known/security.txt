@@ -4,7 +4,7 @@ Hash: SHA512
 Contact: mailto:security@tauos.co
 Contact: mailto:contact@fyralabs.com
 Expires: 2023-01-01T07:59:00.000Z
-Preferred-Languages: en
+Preferred-Languages: en es pt-br cmn en_owo
 Canonical: https://tauos.co/.well-known/security.txt
 Policy: https://github.com/tau-OS/meta/security/policy
 -----BEGIN PGP SIGNATURE-----
