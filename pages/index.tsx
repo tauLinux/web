@@ -1,8 +1,8 @@
 import { Col, Container, Row, Text, Button, Spacer } from "@nextui-org/react";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
+import { faDiscord, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faBook, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
@@ -63,17 +63,16 @@ const Home = () => {
               Subscribe for Updates
             </Button>
             <Button.Group css={{ m: 0 }} rounded flat color="secondary">
-              <Link href="https://twitter.com/tauOS_" passHref>
-                <Button icon={<FontAwesomeIcon icon={faTwitter} />} as="a" />
-              </Link>
-              <Link href="https://discord.gg/5fdPuxTg5Q" passHref>
-                <Button icon={<FontAwesomeIcon icon={faDiscord} />} as="a" />
-              </Link>
+              <Button icon={<FontAwesomeIcon icon={faGithub} />} title="GitHub" href="https://github.com/tau-OS" as="a" />
+              <Button icon={<FontAwesomeIcon icon={faTwitter} />} title="Twitter" href="https://twitter.com/tauOS_" as="a" />
+              <Button icon={<FontAwesomeIcon icon={faDiscord} />} title="Discord" href="https://discord.gg/5fdPuxTg5Q" as="a" />
+              <Button icon={<FontAwesomeIcon icon={faBook} />} title="Documentation" href="https://docs.tauos.co/" as="a" />
+              <Button icon={<FontAwesomeIcon icon={faCode} />} title="Developer Information" href="https://developers.tauos.co/" as="a" />
             </Button.Group>
           </Container>
         </Col>
         <Col>
-          <img src="/hero.png" />
+          <img src="/hero.png" alt="Desktop Preview" />
         </Col>
       </Row>
     </Container>
