@@ -47,9 +47,12 @@ const Home = () => {
           </Text>
           <Spacer />
           <Text style={{ marginBottom: "2rem", width: 500 }}>
-            Introducting tauOS, the modern operating system for creators,
-            developers, gamers, and everyone else. Upgrade your experience with
-            the next generation of systems. Coming soon!
+            Introducing tauOS, the modern operating system for creators,
+            developers, gamers, and everyone else. Based on Fedora and Gnome,
+            tauOS works with proven technologies, but provides increased stability
+            and ease of debugging using an immutable file system. A powerful set
+            of default applications with a consistent design make tauOS easy to get
+            started with. Coming soon!
           </Text>
           <Container gap={0} display="flex" css={{ gap: 10 }}>
             <Button
